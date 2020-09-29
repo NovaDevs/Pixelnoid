@@ -4,7 +4,7 @@ public class PixelColor {
 
     int colorCode = 0;
     //Array de  colores
-    int[][] colorCodes = {
+    int[][] colorArray = {
         {163, 189, 191, 0},//Relleno
         {0, 0, 0, 1},//Negro
         {128, 128, 28, 3},//Gris
@@ -21,7 +21,7 @@ public class PixelColor {
     };
 
     int getColorCode(int red, int green, int blue) {
-        for (int[] color : colorCodes) {
+        for (int[] color : colorArray) {
             if (color[0] == red && color[1] == green && color[2] == blue) {
                 colorCode = color[3];
             };
