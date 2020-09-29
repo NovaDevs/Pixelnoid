@@ -1,4 +1,3 @@
-
 package pixelnoid;
 
 import java.awt.*;

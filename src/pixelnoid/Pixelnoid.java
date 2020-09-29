@@ -6,19 +6,15 @@ import java.awt.image.*;
 import javax.swing.*;
 import java.util.*;
 import java.awt.event.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.awt.Font;
-import javax.imageio.ImageIO;
 
 public class Pixelnoid extends JPanel
 {
-   // private static final long serialVersionUID = -1869204030035434166L;
     public final int LARGO_VENTANA = 756;
     public final int ALTO_VENTANA = 668;
     public final int LARGO_ESCENARIO = 480;
     public final int ALTO_ESCENARIO = 660;
-    public static final int VELOCIDAD = 20;
+    public static final int VELOCIDAD = 60;
     public static final int MAX_NIVEL = 8;
     public static final int NUM_VIDAS = 15;
     public static final int VIDAS_INICIALES = 8;
@@ -70,7 +66,7 @@ public class Pixelnoid extends JPanel
         ge.registerFont(arcade);
         } catch (IOException e) {
              System.err.println("File not found....");
-         }catch(FontFormatException ex){
+         }catch(Exception ex){
              System.err.println("Custom font not found.");
         }
          
@@ -717,8 +713,8 @@ public class Pixelnoid extends JPanel
     }
     
     public static void main(final String[] args) {
-        final Pixelnoid pixelnoid = new Pixelnoid();
-        pixelnoid.jugar();
+        final Pixelnoid arkanoid = new Pixelnoid();
+        arkanoid.jugar();
     }
     
     class Manejador implements KeyListener
