@@ -15,7 +15,8 @@ class Pixel2Level {
     public int[][] pixelToArray(String url_imagen) {
 
         int[][] arrayNivel = null;
-        int pixRed, pixGreen, pixBlue = 0;
+        int pixRed, pixGreen, pixBlue;
+        PixelColor pc = new PixelColor();
 
         try {
             image = ImageIO.read(new File(url_imagen));
@@ -28,7 +29,6 @@ class Pixel2Level {
                 for (int j = 0; j < width; j++) {
 
                     Color c = new Color(image.getRGB(j, i));
-                    PixelColor pc = new PixelColor();
                     pixRed = c.getRed();
                     pixGreen = c.getGreen();
                     pixBlue = c.getBlue();
