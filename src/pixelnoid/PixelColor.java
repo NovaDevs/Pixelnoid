@@ -24,8 +24,8 @@ public class PixelColor {
         for (int[] color : colorArray) {
             if (color[0] == red && color[1] == green && color[2] == blue) {
                 colorCode = color[3];
-            };
-        };
+            }
+        }
         return colorCode;
     };
 };
