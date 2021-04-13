@@ -12,14 +12,14 @@ class Pixel2Level {
     int width;
     int height;
 
-    public int[][] pixelToArray(String url_imagen) {
+    public int[][] pixImToArray(String urlImagen) {
 
         int[][] arrayNivel = null;
         int pixRed, pixGreen, pixBlue;
         PixelColor pc = new PixelColor();
 
         try {
-            image = ImageIO.read(new File(url_imagen));
+            image = ImageIO.read(new File(urlImagen));
             width = image.getWidth();
             height = image.getHeight();
             arrayNivel = new int[height][width];

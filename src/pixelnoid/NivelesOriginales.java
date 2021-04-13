@@ -1,8 +1,6 @@
 
 package pixelnoid;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author SISTEMAS

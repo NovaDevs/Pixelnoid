@@ -82,8 +82,8 @@ public class Pixelnoid extends JPanel
         gestor = new GestorImagenes();
         s = new SistemaPuntuacion();
         
-        premios = new ArrayList<Premio>();
-        ladrillos = new ArrayList<Ladrillo>();
+        premios = new ArrayList<>();
+        ladrillos = new ArrayList<>();
         try {
             
             final File f = new File(this.getClass().getClassLoader().getResource("puntuaciones").toURI());
@@ -551,83 +551,83 @@ public class Pixelnoid extends JPanel
             
             case 1:
                 //------------------------Test de niveles----------------------------------//
-                //arrayLadrillos = pixIm.pixelToArray("src/niveles/space_invaders.png");//1
-                //arrayLadrillos = pixIm.pixelToArray("src/niveles/snake.png");//2
-                //arrayLadrillos = pixIm.pixelToArray("src/niveles/feather.png");//3
-                //arrayLadrillos = pixIm.pixelToArray("src/niveles/star.png");//4
-                //arrayLadrillos = pixIm.pixelToArray("src/niveles/moon.png");//5
-                //arrayLadrillos = pixIm.pixelToArray("src/niveles/coin.png");//6
-                //arrayLadrillos = pixIm.pixelToArray("src/niveles/boo.png");//7
-                //arrayLadrillos = pixIm.pixelToArray("src/niveles/pacman.png");//8
+                //arrayLadrillos = pixIm.pixImToArray("src/niveles/space_invaders.png");//1
+                //arrayLadrillos = pixIm.pixImToArray("src/niveles/snake.png");//2
+                //arrayLadrillos = pixIm.pixImToArray("src/niveles/feather.png");//3
+                //arrayLadrillos = pixIm.pixImToArray("src/niveles/star.png");//4
+                //arrayLadrillos = pixIm.pixImToArray("src/niveles/moon.png");//5
+                //arrayLadrillos = pixIm.pixImToArray("src/niveles/coin.png");//6
+                //arrayLadrillos = pixIm.pixImToArray("src/niveles/boo.png");//7
+                //arrayLadrillos = pixIm.pixImToArray("src/niveles/pacman.png");//8
                 //-------------------------------------------------------------------------//
-                arrayLadrillos = pixIm.pixelToArray("src/niveles/space_invaders.png");
+                arrayLadrillos = pixIm.pixImToArray("src/niveles/space_invaders.png");
                 break;
             
             case 2: 
-                arrayLadrillos = pixIm.pixelToArray("src/niveles/snake.png");
+                arrayLadrillos = pixIm.pixImToArray("src/niveles/snake.png");
                      
                 break;
             case 3: {
-                arrayLadrillos = pixIm.pixelToArray("src/niveles/feather.png");
+                arrayLadrillos = pixIm.pixImToArray("src/niveles/feather.png");
 
                 break;
             }
             case 4: {
-                arrayLadrillos = pixIm.pixelToArray("src/niveles/star.png");
+                arrayLadrillos = pixIm.pixImToArray("src/niveles/star.png");
                   
                 break;
             }
             case 5: {
-                arrayLadrillos = pixIm.pixelToArray("src/niveles/moon.png");
+                arrayLadrillos = pixIm.pixImToArray("src/niveles/moon.png");
                 break;
             }
             case 6: {
-                arrayLadrillos = pixIm.pixelToArray("src/niveles/coin.png");
+                arrayLadrillos = pixIm.pixImToArray("src/niveles/coin.png");
                 break;
             }
             case 7: {
-                arrayLadrillos = pixIm.pixelToArray("src/niveles/boo.png");
+                arrayLadrillos = pixIm.pixImToArray("src/niveles/boo.png");
                 break;
             }
             case 8: {
-                arrayLadrillos = pixIm.pixelToArray("src/niveles/pacman.png");
+                arrayLadrillos = pixIm.pixImToArray("src/niveles/pacman.png");
                 break;
             }
             
             //----------test de final de juego----------------------------------------//
             /*
            case 1:
-                arrayLadrillos = pixIm.pixelToArray("src/niveles/test_end_game.png");
+                arrayLadrillos = pixIm.pixImToArray("src/niveles/test_end_game.png");
                 break;
             
             case 2: 
-                arrayLadrillos = pixIm.pixelToArray("src/niveles/test_end_game.png");
+                arrayLadrillos = pixIm.pixImToArray("src/niveles/test_end_game.png");
                      
                 break;
             case 3: {
-                arrayLadrillos = pixIm.pixelToArray("src/niveles/test_end_game.png");
+                arrayLadrillos = pixIm.pixImToArray("src/niveles/test_end_game.png");
 
                 break;
             }
             case 4: {
-                arrayLadrillos = pixIm.pixelToArray("src/niveles/test_end_game.png");
+                arrayLadrillos = pixIm.pixImToArray("src/niveles/test_end_game.png");
                   
                 break;
             }
             case 5: {
-                arrayLadrillos = pixIm.pixelToArray("src/niveles/test_end_game.png");
+                arrayLadrillos = pixIm.pixImToArray("src/niveles/test_end_game.png");
                 break;
             }
             case 6: {
-                arrayLadrillos = pixIm.pixelToArray("src/niveles/test_end_game.png");
+                arrayLadrillos = pixIm.pixImToArray("src/niveles/test_end_game.png");
                 break;
             }
             case 7: {
-                arrayLadrillos = pixIm.pixelToArray("src/niveles/test_end_game.png");
+                arrayLadrillos = pixIm.pixImToArray("src/niveles/test_end_game.png");
                 break;
             }
             case 8: {
-                arrayLadrillos = pixIm.pixelToArray("src/niveles/test_end_game.png");
+                arrayLadrillos = pixIm.pixImToArray("src/niveles/test_end_game.png");
                 break;
             }*/
             //-----------------------------------------------------------------------//

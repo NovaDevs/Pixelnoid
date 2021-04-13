@@ -9,7 +9,7 @@ public class TestPixel2Level {
 
    public static void main(String args[]) throws Exception {
         Pixel2Level pix = new Pixel2Level();
-        int[][] miNivel = pix.pixelToArray("src/niveles/snake.png");
+        int[][] miNivel = pix.pixImToArray("src/niveles/snake.png");
 
         for (int i = 0; i < miNivel.length; i++) {
             System.out.print("{ ");
